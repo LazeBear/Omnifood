@@ -20,6 +20,14 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.clearfix {zoom :1}
+.clearfix:after{
+content: "-";
+clear: both;
+display: block;
+height: 0;
+visibility: hidden;
+}
 /* ----------------------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* ----------------------------------------------------- */
@@ -197,6 +205,7 @@ header {
 .section-features .long-copy {
     margin-bottom: 35px;
 }
+
 /* ----------------------------------------------------- */
 /* MEALS */
 /* ----------------------------------------------------- */
@@ -236,3 +245,50 @@ header {
     
 }
 
+/* ----------------------------------------------------- */
+/* HOW IT WORKS */
+/* ----------------------------------------------------- */
+.section-steps {
+    background-color: #fafafa;
+}
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen {
+    width: 40%;
+}
+
+.work-steps {
+    margin-bottom: 50px;
+}
+
+.work-steps:last-of-type {
+    margin-bottom: 80px;
+}
+
+.work-steps div {
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    float: left;
+    padding: 5px;
+    font-size: 150%;
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
